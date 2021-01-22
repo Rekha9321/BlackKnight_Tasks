@@ -1,0 +1,43 @@
+Create table Customer 
+(
+ID Integer(1000),
+Name Varchar(100),
+Country Varchar(50),
+Credits Integer(100)
+)
+
+=========================================================
+
+INSERT INTO Customer
+VALUES (1, "Frances White", "USA", 200350);
+
+===========================================================
+
+Question 2: 
+
+display name , id 
+
+sol:
+Select id,name from customer order by name desc, id asc
+
+============================================================
+
+Question 3 : student table 
+create Table Students
+(
+id integer(100) Primary key,
+name Varchar(100),
+Marks Integer(100)
+)
+===========================================================================
+Select id, Name , Marks,
+CASE
+When Marks > 90 then 'A+'
+when Marks >70 then 'A'
+When Marks >50 then 'B'
+When Marks >=40 then 'C'
+When Marks < 40 then 'Fail'
+
+end as Grade
+from Students 
+
